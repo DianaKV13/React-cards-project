@@ -40,8 +40,6 @@ const Login = () => {
 
       console.log("Login response data:", res.data);
 
-      // Adjust token extraction depending on response shape:
-      // If the API returns the token as a string directly:
       const token =
         typeof res.data === "string" ? res.data : res.data.token ?? "";
 
